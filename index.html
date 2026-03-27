@@ -47,6 +47,11 @@
       color:#fff;box-shadow:0 10px 20px rgba(30,99,255,.24)
     }
     .btn-primary:hover{transform:translateY(-2px)}
+    .btn-outline{
+      background:#fff;color:var(--primary);border:1px solid #bcd1ff
+    }
+    .btn-outline:hover{transform:translateY(-2px);background:#eef4ff}
+    .btn-group{display:flex;gap:.7rem;flex-wrap:wrap}
     .card{
       background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
       box-shadow:var(--shadow);padding:1.2rem;transition:.25s ease
@@ -149,10 +154,16 @@
         <div class="reveal">
           <h1>Raj Tailor</h1>
           <p><strong>Perfect Fit for Every Occasion</strong> — Professional men’s tailoring crafted with precision and style in Surat, India.</p>
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-             href="https://wa.me/919925888135?text=Hello%20Raj%20Tailor,%20I%20want%20to%20book%20an%20appointment">
-            Book Appointment
-          </a>
+          <div class="btn-group">
+            <a class="btn btn-primary" target="_blank" rel="noopener"
+               href="https://wa.me/919925888135?text=Hello%20Raj%20Tailor,%20I%20want%20to%20book%20an%20appointment">
+              Book Appointment
+            </a>
+            <a class="btn btn-outline" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&destination=21.200753,72.861514">
+              Get Directions
+            </a>
+          </div>
         </div>
         <div class="card reveal">
           <h3 style="margin-bottom:.6rem">Tailoring You Can Trust</h3>
@@ -164,106 +175,9 @@
         </div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-title reveal">
-          <h2>Services</h2>
-          <p>Custom stitching solutions for your everyday and occasion wear.</p>
-        </div>
-        <div class="grid services-grid">
-          <article class="card reveal"><h3>Men's Shirt Stitching</h3><p style="color:var(--muted)">Sharp cuts and comfort-focused fitting for formal and casual shirts.</p></article>
-          <article class="card reveal"><h3>Pants Stitching</h3><p style="color:var(--muted)">Tailored pants with accurate waist, length, and clean structure.</p></article>
-          <article class="card reveal"><h3>Suits Stitching</h3><p style="color:var(--muted)">Elegant suit tailoring for business, weddings, and special occasions.</p></article>
-          <article class="card reveal"><h3>Kurta Stitching</h3><p style="color:var(--muted)">Traditional and modern kurtas stitched for comfort and style.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:10px">
-      <div class="container about-preview">
-        <div class="card reveal">
-          <h2 style="margin-bottom:8px">About Raj Tailor</h2>
-          <p style="color:var(--muted);margin-bottom:12px">
-            With years of tailoring expertise, Raj Tailor delivers fine craftsmanship, perfect fittings, and reliable service.
-          </p>
-          <a href="about.html" class="btn btn-primary">Read More</a>
-        </div>
-        <div class="card reveal">
-          <h3 style="margin-bottom:8px">Why Clients Choose Us</h3>
-          <p style="color:var(--muted)">Professional approach, attention to detail, and quality stitching that enhances your look for every occasion.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-title reveal">
-          <h2>Gallery Preview</h2>
-          <p>Sample styles for shirts, suits, and kurtas.</p>
-        </div>
-        <div class="grid gallery-grid">
-          <div class="gallery-item reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=900&q=80" alt="Men shirt style"></div>
-          <div class="gallery-item reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80" alt="Suit style"></div>
-          <div class="gallery-item reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=900&q=80" alt="Kurta style"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:10px">
-      <div class="container">
-        <div class="cta-box reveal">
-          <h2 style="margin-bottom:8px">Ready for a Perfect Fit?</h2>
-          <p style="color:var(--muted);margin-bottom:12px">Book your appointment now and get professionally tailored outfits.</p>
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-             href="https://wa.me/919925888135?text=Hello%20Raj%20Tailor,%20I%20want%20to%20book%20an%20appointment">
-            Book Appointment
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-title reveal"><h2>Find Us in Surat</h2></div>
-        <div class="map-wrap reveal">
-          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=21.200758,72.8589391&z=17&output=embed"
-            title="Raj Tailor Map"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top:10px">
-      <div class="container contact-preview reveal">
-        <h2 style="margin-bottom:8px">Contact Us</h2>
-        <p style="color:var(--muted);margin-bottom:12px">WhatsApp: <a href="https://wa.me/919925888135" target="_blank" rel="noopener" style="color:var(--primary)">+91 99258 88135</a> | Email: <a href="mailto:info@rajtailor.com" style="color:var(--primary)">info@rajtailor.com</a></p>
-        <a class="btn btn-primary" href="contact.html">Go to Contact Page</a>
-      </div>
-    </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h4>Raj Tailor</h4>
-          <p>Perfect Fit for Every Occasion<br>Surat, India</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <div class="footer-links">
-            <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
-          </div>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <p><a target="_blank" rel="noopener" href="https://wa.me/919925888135">WhatsApp: +91 99258 88135</a><br><a href="mailto:info@rajtailor.com">info@rajtailor.com</a></p>
-        </div>
-      </div>
-      <div class="copyright">© 2026 Raj Tailor. All rights reserved.</div>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container"><div class="copyright">© 2026 Raj Tailor. All rights reserved.</div></div></footer>
 
   <a class="wa-float" target="_blank" rel="noopener"
      href="https://wa.me/919925888135?text=Hello%20Raj%20Tailor,%20I%20want%20to%20book%20an%20appointment"
