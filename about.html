@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Tailor | About</title>
+  <meta name="description" content="About Raj Tailor - expert tailoring focused on quality, fitting, and experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#1e63ff;--primary-dark:#144ecc;--bg:#f5f8ff;--white:#fff;--text:#152238;
+      --muted:#5f6f89;--border:#dce5f5;--shadow:0 10px 28px rgba(13,52,132,.12);--radius:14px;--container:1120px;--header-h:72px
+    }
+    *{margin:0;padding:0;box-sizing:border-box} html{scroll-behavior:smooth}
+    body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit} .container{width:min(92%,var(--container));margin-inline:auto}
+    .navbar{position:sticky;top:0;height:var(--header-h);z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav-wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:1.25rem;color:var(--primary)}
+    .nav-links{display:flex;gap:.35rem}.nav-links a{padding:.45rem .7rem;border-radius:8px;font-weight:500;color:#2b3b57}
+    .nav-links a:hover,.nav-links a.active{background:#eaf0ff;color:var(--primary)}
+    .menu-btn{display:none;border:1px solid var(--border);background:#fff;padding:.45rem .7rem;border-radius:10px;cursor:pointer}
+    .section{padding:78px 0}.hero{padding:88px 0 58px;background:linear-gradient(180deg,#eaf1ff,#f5f8ff)}
+    .hero h1{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:8px}.hero p{color:var(--muted)}
+    .grid{display:grid;gap:1rem}.about-grid{grid-template-columns:1.1fr .9fr}
+    .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 1.25rem;border-radius:12px;font-weight:600;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff}
+    .points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    .point{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1rem}
+    .point h3{margin-bottom:6px}.point p{color:var(--muted);font-size:.95rem}
+    .footer{margin-top:32px;background:#fff;border-top:1px solid var(--border);padding:28px 0}
+    .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1rem}
+    .footer h4{margin-bottom:8px}.footer p,.footer a{color:var(--muted);font-size:.95rem}.footer-links{display:grid;gap:.35rem}
+    .copyright{border-top:1px solid var(--border);margin-top:16px;padding-top:12px;text-align:center;color:var(--muted);font-size:.9rem}
+    .wa-float{position:fixed;right:16px;bottom:16px;z-index:1200;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;font-size:1.5rem;font-weight:700;box-shadow:0 10px 24px rgba(37,211,102,.45)}
+    .reveal{opacity:0;transform:translateY(18px);transition:.55s ease}.reveal.show{opacity:1;transform:none}
+    @media (max-width:980px){
+      .about-grid,.points,.footer-grid{grid-template-columns:1fr}
+      .nav-links{position:absolute;top:var(--header-h);left:0;right:0;background:#fff;border-bottom:1px solid var(--border);display:grid;gap:.25rem;padding:.65rem 4%;transform:translateY(-130%);opacity:0;pointer-events:none;transition:.25s}
+      .nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto}
+      .menu-btn{display:inline-flex}
+    }
+  </style>
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">Raj Tailor</a>
+    <button class="menu-btn" id="menuBtn">Menu</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container reveal">
+      <h1>About Raj Tailor</h1>
+      <p>Expert tailoring services in Surat, India with a commitment to precision, comfort, and modern style.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid about-grid">
+      <article class="card reveal">
+        <h2 style="margin-bottom:8px">Tailoring Expertise You Can Trust</h2>
+        <p style="color:var(--muted);margin-bottom:10px">
+          Raj Tailor is built on years of hands-on tailoring experience. We focus on quality craftsmanship, perfect measurements, and clean finishing
+          to deliver outfits that look polished and feel comfortable.
+        </p>
+        <p style="color:var(--muted);margin-bottom:14px">
+          Whether it’s everyday wear or a special occasion outfit, every stitch is crafted with care to ensure a professional fit and timeless look.
+        </p>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/919925888135?text=Hello%20Raj%20Tailor,%20I%20want%20to%20book%20an%20appointment">Book Appointment</a>
+      </article>
+      <aside class="card reveal">
+        <h3 style="margin-bottom:8px">Our Promise</h3>
+        <p style="color:var(--muted)">Personalized fittings, premium stitching standards, and reliable delivery timelines for every customer.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:12px">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:20px" class="reveal">
+        <h2>Why Choose Us</h2>
+        <p style="color:var(--muted)">Quality-focused tailoring for a perfect finished look.</p>
+      </div>
+      <div class="points">
+        <div class="point reveal"><h3>Perfect Fitting</h3><p>Accurate measurements and detailed fitting checks for superior comfort.</p></div>
+        <div class="point reveal"><h3>Experienced Tailoring</h3><p>Skilled craftsmanship backed by years of practical tailoring knowledge.</p></div>
+        <div class="point reveal"><h3>Timely Delivery</h3><p>Committed schedules to ensure your outfits are ready when needed.</p></div>
+        <div class="point reveal"><h3>Quality Stitching</h3><p>Neat, durable stitching and refined finishing in every garment.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Raj Tailor</h4><p>Perfect Fit for Every Occasion<br>Surat, India</p></div>
+      <div><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div></div>
+      <div><h4>Contact</h4><p><a target="_blank" rel="noopener" href="https://wa.me/919925888135">WhatsApp: +91 99258 88135</a><br><a href="mailto:info@rajtailor.com">info@rajtailor.com</a></p></div>
+    </div>
+    <div class="copyright">© 2026 Raj Tailor. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="wa-float" target="_blank" rel="noopener"
+   href="https://wa.me/919925888135?text=Hello%20Raj%20Tailor,%20I%20want%20to%20book%20an%20appointment"
+   aria-label="WhatsApp">✆</a>
+
+<script>
+  const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+  menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+  const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}})},{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
